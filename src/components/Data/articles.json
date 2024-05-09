@@ -1,0 +1,59 @@
+[
+  {
+    "type": "Travel Guide",
+    "title": "Experience the Wyoming Frontier Prison Near Brickyard Inn",
+    "publish_date": "14 days ago",
+    "brief": "Just a minutes walk from the Brickyard Inn, the Wyoming Frontier Prison offers a unique glimpse into the history of Wyoming's penal system. With a 4.5-star rating, it's a must-visit for guests staying at the Brickyard Inn.",
+    "author": "Travel Enthusiast",
+    "authorImage": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/travel-enthusiast.png"
+  },
+
+  {
+    "type": "Travel Guide",
+    "title": "Uncover History at the Carbon County Museum Near Brickyard Inn",
+    "publish_date": "14 days ago",
+    "brief": "The Carbon County Museum, a five-minute walk the Brickyard Inn, offers a deep dive into local history. With a 5-star rating, it's a perfect day trip for guests of the Brickyard Inn.",
+    "author": "History Buff",
+    "authorImage": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/history-buff.png"
+  },
+
+  {
+    "type": "Travel Guide",
+    "title": "Relax at Tully Park During Your Stay in Rawlins",
+    "publish_date": "14 days ago",
+    "brief": "Tully Park, a serene spot perfect for a relaxing day out, is conveniently located near the Brickyard Inn. It's a great place to unwind after a day of exploring Rawlins.",
+    "author": "Nature Lover",
+    "authorImage": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/nature-lover.png"
+  },
+
+  {
+    "type": "Travel Guide",
+    "title": "A Day Trip to Aspen Ally",
+    "publish_date": "14 days ago",
+    "brief": "Aspen Ally, a beautiful forested area for a day trip, is easily accessible from the Brickyard Inn. It's a great way to enjoy the natural beauty of Wyoming during your stay.",
+    "author": "Adventure Seeker",
+    "authorImage": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/adventure-seeker.png"
+  },
+
+  {
+    "type": "Travel Guide",
+    "title": "Golfing at Rochelle Ranch Golf Course",
+    "publish_date": "14 days ago",
+    "brief": "Rochelle Ranch Golf Course, a great place for golf enthusiasts, is a short ride from the Brickyard Inn. It's a perfect way to enjoy a day of golf during your stay.",
+    "author": "Sports Fan",
+    "authorImage": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sports-fan.png"
+  },
+
+  {
+    "type": "Travel Guide",
+    "title": "Shopping at Geek-ish Things Near Brickyard Inn",
+    "publish_date": "14 days ago",
+    "brief": "Geek-ish Things, a unique shop with a friendly and helpful staff, is located near the Brickyard Inn. It's a great place to find unique souvenirs during your stay.",
+    "author": "Shopping Guru",
+    "authorImage": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/shopping-guru.png"
+  }
+
+
+
+
+]

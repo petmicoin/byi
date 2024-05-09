@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name1": "Single Rooms",
+        "name2": "200 sq.ft",
+        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow border border-black justify-between items-center flex text-black",
+        "arrow": "./services/ag.svg",
+        "link": "./",
+        "image": "./services/01.jpg"
+    },
+    {
+        "id": 2,
+        "name1": "Double Rooms",
+        "name2": "300 sq.ft",
+        "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow border border-black justify-between items-center flex text-black",
+        "arrow": "./services/ag.svg",
+        "link": "./",
+        "image": "./services/02.jpg"
+    }
+]

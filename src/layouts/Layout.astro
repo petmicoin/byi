@@ -1,0 +1,28 @@
+---
+import "../styles/global.css";
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Brickyard Inn</title>
+    <meta
+      name="description"
+      content="Discover the pet-friendly Brickyard Inn in Rawlins, Wyoming. Our newly renovated rooms and exceptional service cater to all, including our four-legged friends. Perfect for short stays, long-term lodging, and construction crews. Call (307) 461-2199 to book your stay today."
+    />
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-white font-SpaceGrotesk space-y-20">
+    <Navbar />
+    <slot />
+    <Footer/>
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+  </body>
+</html>

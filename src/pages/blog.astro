@@ -1,0 +1,46 @@
+---
+import Container from "../components/Container.astro"
+import Layout from '../layouts/Layout.astro';
+import articlesData from '../components//Data/articles.json';
+import ArticleIcon from "../components/Icons/ArticleIcon.astro";
+import VideoIcon from "../components/Icons/VideoIcon.astro";
+---
+
+<Layout title="Positivus - Blog">
+	<main class="space-y-20">
+		<Container>
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900">Local Attractions</h2>
+                    <p class="font-light text-gray-500 sm:text-xl">Rawlins, Wyoming: Where History Meets Adventure!</p>
+                </div> 
+                <div class="grid gap-8 lg:grid-cols-2">
+                    {
+                    articlesData.map(({ type, title, publish_date, brief, author, authorImage} ) => (
+                      <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md">
+                          <div class="flex justify-between items-center mb-5 text-gray-500">
+                              <span class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                                {type == 'Article' ? (<ArticleIcon />) : (<VideoIcon />)}
+                                {type}
+                              </span>
+
+                          </div>
+                          <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><a href="#">{title}</a></h2>
+                          <p class="mb-5 font-light text-gray-500" style="white-space: pre-line">{brief}</p>
+                          <div class="flex justify-between items-center">
+                              <div class="flex items-center space-x-4">
+
+                                <span class="font-medium">
+                                    {author}
+                                </span>
+                              </div>
+
+                          </div>
+                      </article> 
+                    ))
+                    }
+                </div>  
+            </div>
+        </Container>
+	</main>
+</Layout>

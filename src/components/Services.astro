@@ -1,0 +1,150 @@
+---
+import Container from "./Container.astro"
+import servicesData from './Data/services.json';
+---
+<Container>
+<div class="relative flex flex-col items-center md:flex-row" id="services">
+    <div class="row items-center py-5 md:pr-20 md:w-3/12 md:py-10">
+        <div class="text-center md:text-left space-y-3 bg-lime">
+            <h2 class="text-4xl font-medium leading-none sm:text-6xl">Rooms</h2>
+        </div>
+    </div>
+    <div class="flex items-center py-5 md:w-9/12 md:py-10">
+        <p class="text-xl font-normal leading-7 text-center md:text-left">Brickyard Inn is more than just a motel; it's a testament for our commitment to the community.</p>
+    </div>
+</div>
+
+<div class="flex-row items-center py-5">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- card start-->
+        {
+        servicesData.map(({ background, name1, name2, arrow, link, image} ) => (
+        <div class={background}>
+            <div class="flex-col justify-center items-start gap-[93px] inline-flex">
+                <div class="flex-col justify-start items-start flex">
+                    <div class="px-[7px] bg-lime-300 rounded-[7px] flex-col justify-start items-start gap-2.5 flex">
+                        <div class=" text-3xl font-medium">{name1}</div>
+                    </div>
+                    <div class="px-[7px] bg-lime-300 rounded-[7px] flex-col justify-start items-start gap-2.5 flex">
+                        <div class="text-3xl font-medium">{name2}</div>
+                    </div>
+                </div>
+                <a class="justify-start items-center gap-[15px] inline-flex" href={link}>
+
+                    <div class="text-xl font-normal leading-7">Brickyard Inn</div>
+                </a>
+            </div>
+            <div class="w-[210px] h-[170px] pt-0.5 pb-[1.95px] justify-center items-center flex">
+                <img class="hidden md:block" src={image} />
+            </div>
+        </div>
+        ))
+        }
+        <!-- card end-->
+    </div>
+</div>
+
+<div class="flex flex-row justify-center my-6 p-14 bg-zinc-100 rounded-[45px]">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-20 gap-y-8">
+        <!-- Column 1 -->
+            <div class="flex flex-col justify-start items-start text-center border border-black p-6">
+            <div class="text-3xl font-medium mb-4">Hotel Amenities</div>
+            <!-- List -->
+                                    <ul role="list" class="mb-8 space-y-4 text-left">
+                                        <li class="flex items-center space-x-3">
+                                            <!-- Icon -->
+                                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <span>Free parking</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <!-- Icon -->
+                                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <span>Free WiFi</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <!-- Icon -->
+                                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <span>Non-smoking hotel</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <!-- Icon -->
+                                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <span>Pet-friendly hotel</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <!-- Icon -->
+                                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <span>24-hour front desk</span></span>
+                                        </li>
+                                    </ul>
+        </div>
+        <!-- Column 2 -->
+            <div class="flex flex-col justify-start items-start text-center border border-black p-6">
+            <div class="text-3xl font-medium mb-4">Room Features</div>
+                        <!-- List -->
+                                                <ul role="list" class="mb-8 space-y-4 text-left">
+                                                    <li class="flex items-center space-x-3">
+                                                        <!-- Icon -->
+                                                        <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                                        <span>Air conditioning</span>
+                                                    </li>
+                                                    <li class="flex items-center space-x-3">
+                                                        <!-- Icon -->
+                                                        <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                                        <span>Cable TV</span>
+                                                    </li>
+                                                    <li class="flex items-center space-x-3">
+                                                        <!-- Icon -->
+                                                        <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                                        <span>Refrigerator</span>
+                                                    </li>
+                                                    <li class="flex items-center space-x-3">
+                                                        <!-- Icon -->
+                                                        <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                                        <span>Microwave</span>
+                                                    </li>
+                                                    <li class="flex items-center space-x-3">
+                                                        <!-- Icon -->
+                                                        <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                                        <span>Hot shower</span></span>
+                                                    </li>
+                                                </ul>
+                    </div>
+        <!-- Column 3 -->
+            <div class="flex flex-col justify-start items-start text-center border border-black p-6">
+            <div class="text-3xl font-medium mb-4">Good to Know</div>
+                                    <!-- List -->
+                                                            <ul role="list" class="mb-8 space-y-4 text-left">
+                                                                <li class="flex items-center space-x-3">
+                                                                    <!-- Icon -->
+                                                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                                                    <span>Housekeeping</span>
+                                                                </li>
+                                                                <li class="flex items-center space-x-3">
+                                                                    <!-- Icon -->
+                                                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                                                    <span>Complimentary toiletries</span>
+                                                                </li>
+                                                                <li class="flex items-center space-x-3">
+                                                                    <!-- Icon -->
+                                                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                                                    <span>Nightly / Weekly / Monthly</span>
+                                                                </li>
+                                                                <li class="flex items-center space-x-3">
+                                                                    <!-- Icon -->
+                                                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                                                    <span>Clean Rooms</span>
+                                                                </li>
+                                                                <li class="flex items-center space-x-3">
+                                                                    <!-- Icon -->
+                                                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                                                    <span>Located downtown</span></span>
+                                                                </li>
+                                                            </ul>
+                                </div>
+                                </div>
+                                </div>
+
+
+</Container>

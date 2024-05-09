@@ -1,0 +1,48 @@
+---
+import Container from "../components/Container.astro"
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to My site">
+	<main class="space-y-20">
+		<Container>
+		            <div class="flex items-center">
+                            <img src="/rm.jpg" width="100%" alt="Brickyard Inn Office"/>
+                        </div>
+
+            <div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
+
+                <div class="row items-center py-5 md:pb-20 md:pt-10">
+                    <div class="text-left space-y-10">
+                        <h2 class="text-5xl font-medium leading-none md:text-3xl">Thank you for choosing Brickyard Inn. We eagerly await your arrival and look forward to making your stay in Rawlins a memorable one.</h2>
+                        <p class="mt-6 mb-8  text-xl font-normal leading-7 sm:mb-12">Welcome to Brickyard Inn, your premier accommodation choice in Rawlins, Wyoming. Nestled in the heart of this historic town, Brickyard Inn, owned and operated by Mike and Ruth Perry, offers a unique blend of comfort, cleanliness, and community hospitality.<br><br>Established in 1949, our motel has undergone a transformative journey under our ownership since 2016. Coming from a ranching background, we bring a strong work ethic and a deep-rooted commitment to our guests' satisfaction. At Brickyard Inn, we understand the importance of a clean and welcoming environment. Our motto, "you can sleep in your own dirt, but not somebody else's," reflects our dedication to maintaining impeccable cleanliness standards.<br><br>Beyond providing comfortable accommodations, Brickyard Inn is deeply ingrained in the fabric of the Rawlins community. Our commitment to giving back is evident through our various outreach initiatives, including providing meals and clothing to those in need. Guided by our faith, we strive to make a positive impact on the lives of our guests and neighbors alike.<br><br>Thank you for considering Brickyard Inn for your stay in Rawlins. Whether you're visiting for business or leisure, we are dedicated to ensuring your experience is nothing short of exceptional. We eagerly await your arrival and the opportunity to exceed your expectations.<br><br>The Brickyard Inn<br>Mike and Ruth Perry<br>415 W Spruce St.<br>Rawlins, Wyoming 82301 <br><span class="font-semibold">Book Direct: </span>(307) 461-2199 <br>email: ruthperry22@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-row items-center">
+                <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
+                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/01.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/02.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                    <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/03.svg" class="h-9 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/04.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                    <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/05.svg" class="h-8 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/06.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                </div>
+            </div>
+        </Container>
+	</main>
+</Layout>
